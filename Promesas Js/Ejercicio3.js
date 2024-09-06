@@ -2,7 +2,8 @@ function enviarCorreo(direccion) {
     return new Promise((resolve, reject) => {
       if (direccion) {
         setTimeout(() => {
-          resolve(`Correo enviado a ${direccion}`);}, 2000);
+          resolve(`Correo enviado a ${direccion}`);
+        }, 2000);
       } else {
         reject("Dirección de correo no proporcionada");
       }
